@@ -1,0 +1,46 @@
+.card {
+    width: 6.25rem;
+    height: 7.5rem;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__inner {
+      // background: #fff;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: all 1s;
+      transform-style: preserve-3d;
+    }
+
+    &__front, &__back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0
+    }
+
+    &__front {
+      background: linear-gradient(45deg, #fff 30%, #333)
+    }
+
+    &__back {
+      background: #fff;
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.5em;
+    }
+
+    &--flip {
+        transform: rotateY(180deg);
+    }
+    &--matched {
+        pointer-events: none;
+    }
+  }

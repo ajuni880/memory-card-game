@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif, arial;
+    height: 100%;
+    width: 100%;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    color: #333;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    max-width: 35rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
